@@ -1,330 +1,119 @@
-# Patreon Clone — White-Label Solution by Miracuves
+# Patreon Clone — White-Label Creator Subscription & Fan Engagement Platform by Miracuves
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxfans.mimeld.com)
-[![Solution Page](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/patreon-clone/)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxpatreon.mimeld.com)
+[![Website](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/patreon-clone/)
 [![Delivery](https://img.shields.io/badge/Go_Live-6_Working_Days-2ecc8f?style=for-the-badge)](https://miracuves.com/patreon-clone/#pricing)
 [![Support](https://img.shields.io/badge/Support-60_Days_+_12mo_Updates-blue?style=for-the-badge)](https://miracuves.com/facts/)
 
+**MXPatreon** is a production-ready, white-label Patreon clone: a complete creator-economy platform with subscriptions, tips, PPV, and admin console — delivered with **100% source code ownership** in **6 working days**.
+
+> ⭐ **See it running before you talk to anyone.** Live fan app, creator dashboard, and admin console — demo credentials are printed on the [solution page](https://miracuves.com/patreon-clone#demo). No sales call required.
+
 ---
 
-## Table of Contents
-
-1. [Who Is This For?](#who-is-this-for)
-2. [How It Works](#how-it-works)
-3. [Core Features](#core-features)
-4. [Architecture](#architecture)
-5. [Revenue Streams](#revenue-streams)
-6. [What's Included](#whats-included)
-7. [Deployment Timeline](#deployment-timeline)
-8. [Why Not Build From Scratch?](#why-not-build-from-scratch)
-9. [Market Opportunity](#market-opportunity)
-10. [Client Testimonials](#client-testimonials)
-11. [FAQ](#faq)
-12. [Resources](#resources)
-13. [About Miracuves](#about-miracuves)
-
-## Live Demos
+## 🚀 Live Demos
 
 | Environment | URL | What you can test |
 |---|---|---|
-| Web Platform | [mxfans.mimeld.com](https://mxfans.mimeld.com) | Full experience in the browser |
-| Mobile App (Android) | [mas.mimeld.com](https://mas.mimeld.com) | Browse, transact, engage |
-| Admin Dashboard | [Solution page → Demo](https://miracuves.com/patreon-clone/#demo) | Users, content, plans, analytics |
+| 📱 Fan App | [mas.mimeld.com](https://mas.mimeld.com) | Subscribe, message, tip, exclusive content |
+| 🌐 Web Fan Portal | [mxpatreon.mimeld.com](https://mxpatreon.mimeld.com) | Full fan experience in the browser |
+| 🎨 Creator Dashboard | [Solution page → Demo](https://miracuves.com/patreon-clone#demo) | Posts, tiers, messages, earnings, analytics |
+| 🛠️ Admin Console | [Solution page → Demo](https://miracuves.com/patreon-clone#demo) | Creators, fans, content, payouts |
 
-Demo credentials: [miracuves.com/patreon-clone -> Demo section](https://miracuves.com/patreon-clone/#demo)
-
-## What Makes This Patreon Clone Different
-
-<!-- TODO: fill 3-5 vertical-specific differentiators -->
-
-## Who Is This For?
-
-| Buyer Type | Use Case |
-|---|---|
-| Startup founders | Launch platform |
-| Agencies | White-label |
-| Enterprises | Custom |
+Demo credentials for all environments: **[miracuves.com/patreon-clone → Demo section](https://miracuves.com/patreon-clone/#demo)**
 
 ---
 
-## How It Works
+## ✨ What Makes This Patreon Clone Different
 
-1. User opens app
-2. Selects service
-3. Transaction completed
-4. Payment processed
-5. Confirmation sent
+Most creator-platform scripts stop at "subscription page." This platform ships with the features that actually run a creator *business*:
 
----
+- **Tiered Subscriptions** — multi-tier membership with monthly/yearly billing, free trials, gift subscriptions — same mechanics Patreon built on
+- **Pay-Per-View & Tips** — 
+- **Built-In Live Streaming** — PPV messages, locked media, tip jars — same monetization tools Fansly and OnlyFans use
+- **AI DM Assistant** — U.S. 2257 recordkeeping, age verification, and DMCA takedown workflow — production-grade compliance, not a checkbox
+- **2257 / Compliance Stack** — helps creators triage 1000+ DMs/day with smart replies, sentiment analysis, and content moderation — saves creator hours
 
-## Core Features
+## 📦 Core Features
 
-### Fan App
-- Browse creators
-- Subscribe tiers
-- Exclusive content
-- Direct messaging
-- PPV purchases
-- Notifications
+**Fan:** subscribe to creators · unlock exclusive posts · send tips · DM creators · live sessions · community feed · multi-language
 
-### Creator App
-- Profile management
-- Content publishing
-- Revenue dashboard
-- Fan analytics
-- Payout management
+**Creator:** profile & branding · tier builder · post scheduler · DM inbox · tip & PPV tools · analytics · payouts · live streaming
 
-### Admin Panel
-- Creator verification
-- Content moderation
-- Revenue analytics
-- Dispute resolution
+**Admin:** KYC & payouts · content moderation · DM oversight · dispute resolution · analytics reports
 
----
-
-## Advanced Features
-
-The platform integrates AI-powered features that reduce manual overhead and capture revenue opportunities:
-
-- **AI Engine** - Smart automation
-- **AI Content Recommendation** - Personalized creator discovery
-- **AI Revenue Insights** - Optimization suggestions for creators
-- **AI Moderation** - Automated content safety checks
-
----
-
-## Apps and Web Panels
-
-| Module | Description |
-|---|---|
-| Patron App | Subscribe,view |
-| Creator App | Manage,earn |
-
----
-
-## Architecture
+## 🏗️ Architecture
 
 ```mermaid
 flowchart LR
-    A[Flutter Apps<br/>Android · iOS] --> G[REST API<br/>Laravel Backend]
-    W[Web Platform<br/>Responsive] --> G
-    P[Partner Panel] --> G
-    AD[Admin Dashboard] --> G
-    G --> DB[(MySQL)]
-    G --> S3[Object Storage]
+    A[Fan App<br/>Flutter]
+    B[Web Fan Portal<br/>Responsive]
+    W[Creator Dashboard]
+    AD[Admin Console]
+    A --> G[REST API<br/>Node.js]
+    B --> G
+    W --> G
+    AD --> G
+    G --> DB[(MongoDB)]
+    G --> S3[Object Storage<br/>Content]
+    S3 --> CDN[CDN]
+    CDN --> A
+    CDN --> B
 ```
 
-**Stack:**
+**Stack:** Flutter mobile apps (Android + iOS) · Node.js backend · MongoDB + S3 for content · WebRTC for live · Stripe Connect for creator payouts · Stripe Connect, regional gateways, multi-currency
 
-| Layer | Technology |
-|---|---|
-| Mobile | Flutter |
-| Backend | Node.js |
-| DB | MongoDB |
-| Payments | Stripe |
+## 📋 What’s Included
 
----
+- ✅ Full source code — backend, web, mobile apps, panels (no encryption, no license locks)
+- ✅ Deployment to your servers & app store submission assistance
+- ✅ Your branding — white-label rename, logo, colors, domain
+- ✅ 60 days post-launch support + 12 months of free updates
+- ✅ Documentation & handover
 
-## Revenue Streams
+**Pricing:** from **$6,699**, transparent on the [solution page](https://miracuves.com/patreon-clone/#pricing) — no "contact us for quote" games.
 
-The platform is engineered to generate revenue from day one through multiple complementary channels:
+## 🆚 Why Not Build From Scratch?
 
-- Transaction fees
-- Subscription
-- Premium features
-- Platform commission (5-20%)
-- Subscription revenue share
-- PPV transaction fees
-- Promoted creators
-- Withdrawal fees
+Custom creator platforms run $80k–$400k and 5–10 months. A proven white-label base gets you to market in 6 working days for a fraction of that, with your budget preserved for creator outreach and growth marketing.
 
----
+## 📚 Resources
 
-## Security and Compliance
+- 📖 [Patreon Clone — Full Solution Page](https://miracuves.com/patreon-clone) (features, pricing, demos, FAQ)
+- 💰 [How Much Does a Creator App Cost in 2026?](https://miracuves.com/patreon-clone#pricing) pricing breakdown & what's included
+- 📝 [Best Patreon Clone Script in 2026](https://miracuves.com/patreon-clone/blog/) features, pricing & launch guide
+- 🧠 [Creator Economics: Subscriptions vs Tips vs PPV](https://miracuves.com/patreon-clone/blog/) LTV by monetization mix
+- ✅ [Miracuves Facts & Claims Ledger](https://miracuves.com/patreon-clone/facts/) every claim we make, verified
 
-- OTP-based authentication
-- SSL/TLS encrypted API communication
-- GDPR-ready data handling
+## 🏢 About Miracuves
+
+[Miracuves Solutions](https://miracuves.com) builds white-label clone apps and custom software from Mumbai, India — 90+ ready-made solutions, live demos for every product, transparent pricing, and delivery in 6 working days. Operating since 2010.
+
+**Talk to us:** [WhatsApp](https://wa.me/919830009649) · [Schedule a consultation](https://miracuves.com/schedule-consultation/) · [miracuves.com](https://miracuves.com)
 
 ---
 
-## What's Included
+### ⚠️ Note on This Repository
 
-| Plan | Price | What You Get |
-|---|---|---|
-| Standard | **$$6,699** | Complete source code, all apps, admin panel, rebranding, 1 year updates |
-| Enterprise | Custom Quote | Everything in Standard + custom features, multi-region, priority support |
+This repository is a product overview. The full source code is delivered to clients on purchase — see [what’s included](https://miracuves.com/patreon-clone/#included). For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
 
-**What is included:**
-
-- Patron App
-- Creator App
-- Full Source Code
-- Complete Rebranding (your logo, colors, app name)
-- Server Deployment
-- App Store and Google Play Submission Support
-- 60 Days Free Bug Support
-- Free 1-Year Updates
+*Keywords: patreon clone, patreon clone script, creator economy, fan subscription, white label Patreon, Flutter creator app, Node.js fan platform, subscription platform*
 
 ---
-**Pricing:** on request — see the [solution page](https://miracuves.com/patreon-clone/#pricing).
-
-
-## Deployment Timeline
-
-| Day | Milestone |
-|---|---|
-| Day 1 | Server setup, environment configuration, initial deployment |
-| Day 2 | White-labeling - app name, logo, colors, splash screens |
-| Day 3 | Payment gateway integration + third-party API configuration |
-| Day 4 | Custom feature implementation (if applicable) |
-| Day 5 | QA, testing, bug fixes across all panels |
-| Day 6 | App Store + Google Play submission + Go-live |
-
-> **Average go-live: 6 business days from payment confirmation.**
-
----
-
-## Why Not Build From Scratch?
-
-| Factor | Build from Scratch | Miracuves Solution |
-|---|---|---|
-| Time to Launch | 6-12 months | 6 days |
-| Development Cost | $60,000-$150,000 | From $$6,699 |
-| Source Code Ownership | Yes | Yes |
-| Customization | Full | Full |
-| Post-Launch Support | Depends on team | 60 days included |
-| Risk | High | Low |
-
----
-
-## Market Opportunity
-
-| Metric | Data |
-|---|---|
-| Large Market | Growing |
-
-> Source: Statista, Grand View Research, Allied Market Research
-
----
-
-## Successful Verticals
-
-- On-demand
-- Digital platform
-- Content creators
-- Musicians & artists
-- Fitness coaches
-- Adult entertainment
-- Educational creators
-
----
-
-## Client Testimonials
-
-> *"Launched in 6 days."*
-> - Founder
-
-> *"Exceptional results from day one."*
-> - Verified Client
-
-> *"Scaled 3x faster than expected."*
-> - Startup Founder
-
----
-
-## FAQ
-
-**How much?**
-See pricing.
-
-**Source code?**
-Yes.
-
-**Launch?**
-6 days.
-
-**Can I customize the branding?**
-Yes, full white-labeling included.
-
-**Do you provide post-launch support?**
-60 days free bug support included.
-
-**Can I add custom features?**
-Yes, we accommodate custom requests.
-
----
-
-## Related Solutions
-
-Explore our other white-label clone solutions:
-
-- [Uber Clone](https://github.com/Miracuves-Solutions/uber-clone)
-
----
-
-## Resources
-
-- [Full Solution Page](https://miracuves.com/patreon-clone/) — features, pricing, demos, FAQ
-
-
-## Get Started
-
-**Ready to launch your creator membership platform?**
-
-| Channel | Link |
-|---|---|
-| Full Solution Page | [miracuves.com/patreon-clone](https://miracuves.com/patreon-clone/) |
-| Email | info@miracuves.com |
-| WhatsApp | [+91 98300 09649](https://wa.me/919830009649) |
-| Book a Call | [Free Consultation](https://miracuves.com/contact/) |
-
----
-
-## About Miracuves
-
-**Miracuves Solutions Pvt. Ltd.** is a Mumbai-based software company specializing in white-label clone app solutions across 12+ industries.
-
-- 90+ ready-to-deploy solutions
-- 6-day delivery guarantee
-- 60+ engineers on staff
-- 3,900+ apps delivered
-- Full source code ownership
-- Clients across 40+ countries including India and USA
-
-[Explore all 90+ solutions at miracuves.com](https://miracuves.com)
-
----
-
-## Disclaimer
-
-This product is independently developed by Miracuves. All product names, logos, and brands are property of their respective owners. Use of these names does not imply endorsement.
-
----
-
-<div align="center">
-
-*(c) 2026 Miracuves Solutions Pvt. Ltd. | Mumbai, India*
-*This repository contains product documentation only - no proprietary source code is published here.*
-
-</div>
-
-
-*Keywords: patreon clone, patreon script, white label solution, laravel flutter app, clone script*
-
-
-
----
-
-### Note on This Repository
-
-This repository is a product overview. The full source code is delivered to clients on purchase. For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
-
 
 <!--
-=========================================================
-GENERATED FROM MIRACUVES NETFLIX-CLONE README TEMPLATE
-Canon: 6 working days, from $2,799 floor, 60 days support + 12 months updates.
-Never use 3 days. See https://miracuves.com/facts/ for audited claims.
-=========================================================
+══════════════════════════════════════════════════
+TEMPLATE VARIABLE KEY — auto-generated from Netflix-Clone pattern
+══════════════════════════════════════════════════
+{APP_NAME}        Patreon Clone
+{MX_NAME}         MXPatreon
+{CATEGORY}        Creator Subscription & Fan Engagement Platform
+{DEMO_WEB}        mxpatreon.mimeld.com
+{PRICE}           $6,699
+{SLUG}            patreon-clone
+{SOLUTION_URL}    https://miracuves.com/patreon-clone/
+{VERTICAL}        creator_economy
+
+See /tmp/verticals/creator_economy.txt for the vertical config used to generate this README.
+══════════════════════════════════════════════════
 -->
