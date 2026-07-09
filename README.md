@@ -29,10 +29,10 @@ Demo credentials for all environments: **[miracuves.com/patreon-clone → Demo s
 Most creator-platform scripts stop at "subscription page." This platform ships with the features that actually run a creator *business*:
 
 - **Tiered Subscriptions** — multi-tier membership with monthly/yearly billing, free trials, gift subscriptions — same mechanics Patreon built on
-- **Pay-Per-View & Tips** — 
-- **Built-In Live Streaming** — PPV messages, locked media, tip jars — same monetization tools Fansly and OnlyFans use
-- **AI DM Assistant** — U.S. 2257 recordkeeping, age verification, and DMCA takedown workflow — production-grade compliance, not a checkbox
-- **2257 / Compliance Stack** — helps creators triage 1000+ DMs/day with smart replies, sentiment analysis, and content moderation — saves creator hours
+- **Pay-Per-View & Tips** — PPV messages, locked media, tip jars — same monetization tools Fansly and OnlyFans use
+- **Built-In Live Streaming** — low-latency live rooms with paid tickets, gift animations, and DM fan-outs — not bolted-on
+- **AI DM Assistant** — helps creators triage 1000+ DMs/day with smart replies, sentiment analysis, and content moderation — saves creator hours
+- **2257 / Compliance Stack** — U.S. 2257 recordkeeping, age verification, and DMCA takedown workflow — production-grade compliance, not a checkbox
 
 ## 📦 Core Features
 
