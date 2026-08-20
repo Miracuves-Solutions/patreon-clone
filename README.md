@@ -2,10 +2,10 @@
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxpatreon.mimeld.com)
 [![Website](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/patreon-clone/)
-[![Delivery](https://img.shields.io/badge/Go_Live-6_Working_Days-2ecc8f?style=for-the-badge)](https://miracuves.com/patreon-clone/#pricing)
-[![Support](https://img.shields.io/badge/Support-60_Days_+_12mo_Updates-blue?style=for-the-badge)](https://miracuves.com/facts/)
+[![Delivery](https://img.shields.io/badge/Go_Live-6_Working_Days-2ecc8f?style=for-the-badge)](https://miracuves.com/patreon-clone/#features)
+[![Support](https://img.shields.io/badge/Support-60_Days_+_12mo_Updates-blue?style=for-the-badge)](https://miracuves.com/patreon-clone/#features)
 
-**MXPatreon** is a production-ready, white-label Patreon clone: a complete creator-economy platform with subscriptions, tips, PPV, and admin console — delivered with **100% source code ownership** in **6 working days**.
+**mxpatreon** is a production-ready, white-label Patreon clone: a complete creator-economy platform with subscriptions, tips, PPV, and admin console — delivered with **100% source code ownership** in **6 working days**.
 
 > ⭐ **See it running before you talk to anyone.** Live fan app, creator dashboard, and admin console — demo credentials are printed on the [solution page](https://miracuves.com/patreon-clone#demo). No sales call required.
 
@@ -71,7 +71,7 @@ flowchart LR
 - ✅ 60 days post-launch support + 12 months of free updates
 - ✅ Documentation & handover
 
-**Pricing:** from **$6,699**, transparent on the [solution page](https://miracuves.com/patreon-clone/#pricing) — no "contact us for quote" games.
+**Pricing:** from **$6,699**, transparent on the [solution page](https://miracuves.com/patreon-clone/#features) — no "contact us for quote" games.
 
 ## 🆚 Why Not Build From Scratch?
 
@@ -80,10 +80,12 @@ Custom creator platforms run $80k–$400k and 5–10 months. A proven white-labe
 ## 📚 Resources
 
 - 📖 [Patreon Clone — Full Solution Page](https://miracuves.com/patreon-clone) (features, pricing, demos, FAQ)
-- 💰 [How Much Does a Creator App Cost in 2026?](https://miracuves.com/patreon-clone#pricing) pricing breakdown & what's included
-- 📝 [Best Patreon Clone Script in 2026](https://miracuves.com/patreon-clone/blog/) features, pricing & launch guide
-- 🧠 [Creator Economics: Subscriptions vs Tips vs PPV](https://miracuves.com/patreon-clone/blog/) LTV by monetization mix
-- ✅ [Miracuves Facts & Claims Ledger](https://miracuves.com/patreon-clone/facts/) every claim we make, verified
+- 💰 [How Much Does a Creator App Cost in 2026?](https://miracuves.com/patreon-clone#features) pricing breakdown & what's included
+- 📝 [Best Patreon Clone Script in 2026](https://miracuves.com/patreon-clone#features) features, pricing & launch guide
+- 🧠 [Creator Economics: Subscriptions vs Tips vs PPV](https://miracuves.com/patreon-clone#features) LTV by monetization mix
+- ✅ [Miracuves Facts & Claims Ledger](https://miracuves.com/patreon-clone#faq) every claim we make, verified
+- 💻 [Patreon Clone — Technical Stack](https://miracuves.com/patreon-clone#techstack) languages, databases, infra, payments, hosting
+- 🔄 [Patreon Clone — How It Works / User Flow](https://miracuves.com/patreon-clone#flow) step-by-step product walkthrough
 
 ## 🏢 About Miracuves
 
@@ -95,7 +97,7 @@ Custom creator platforms run $80k–$400k and 5–10 months. A proven white-labe
 
 ### ⚠️ Note on This Repository
 
-This repository is a product overview. The full source code is delivered to clients on purchase — see [what’s included](https://miracuves.com/patreon-clone/#included). For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
+This repository is a product overview. The full source code is delivered to clients on purchase — see [what’s included](https://miracuves.com/patreon-clone/#features). For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
 
 *Keywords: patreon clone, patreon clone script, creator economy, fan subscription, white label Patreon, Flutter creator app, Node.js fan platform, subscription platform*
 
@@ -106,7 +108,7 @@ This repository is a product overview. The full source code is delivered to clie
 TEMPLATE VARIABLE KEY — auto-generated from Netflix-Clone pattern
 ══════════════════════════════════════════════════
 {APP_NAME}        Patreon Clone
-{MX_NAME}         MXPatreon
+{MX_NAME}         mxpatreon
 {CATEGORY}        Creator Subscription & Fan Engagement Platform
 {DEMO_WEB}        mxpatreon.mimeld.com
 {PRICE}           $6,699
